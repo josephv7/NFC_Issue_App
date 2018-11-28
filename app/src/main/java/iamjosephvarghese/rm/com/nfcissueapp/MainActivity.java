@@ -27,11 +27,8 @@ public class MainActivity extends AppCompatActivity {
         proceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ip_address.getText().toString().equals(null)){
+                if(ip_address.getText().toString().equals("")){
                     Snackbar.make(findViewById(R.id.rootView),"Enter IP Address", Snackbar.LENGTH_SHORT).show();
-                }else {
-                    Intent intent = new Intent(MainActivity.this,Home.class);
-                    startActivity(intent);
                 }
             }
         });
