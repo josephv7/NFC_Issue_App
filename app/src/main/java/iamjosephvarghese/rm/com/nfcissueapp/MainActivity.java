@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 if(ip_address.getText().toString().equals("")){
                     Snackbar.make(findViewById(R.id.rootView),"Enter IP Address", Snackbar.LENGTH_SHORT).show();
                 }else {
-                    Intent intent = new Intent(MainActivity.this,Home.class);
+                    Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });
